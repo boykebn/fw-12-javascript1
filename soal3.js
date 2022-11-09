@@ -3,7 +3,7 @@ function hitung() {
     const bahasaIndonesia = 90;
     const bahasaInggris = 90;
     const ipa = 90;
-    let jumlah = parseInt(mtk) + parseInt(bahasaIndonesia) + parseInt(bahasaInggris) + parseInt(ipa);
+    let jumlah = mtk + bahasaIndonesia + bahasaInggris + ipa;
     let rataRata = (jumlah / 4); 
 
     if (rataRata >= 90) {

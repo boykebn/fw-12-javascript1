@@ -1,4 +1,4 @@
-const teks = "jakarta";
+const text = "aan";
 
 const replaceKons = (text) => {
   let result = "";
@@ -16,4 +16,4 @@ const replaceKons = (text) => {
   return result;
 };
 
-console.log(replaceKons(teks));
+console.log(replaceKons(text));
