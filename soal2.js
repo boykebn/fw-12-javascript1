@@ -13,6 +13,6 @@ const biodata = {
         level: 'beginner'
     }],
     interestInCoding: true
-}
+};
 
 console.log(biodata);

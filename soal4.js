@@ -1,14 +1,18 @@
-const text = 'malam';
-
 const checkPalindrome = (text) => {
-    for(i = 0; i < text.length; i++) {
-        if (text.length <= 2) {
-            return "kata harus lebih dari 2 huruf";
-        } if (text[i] !== text[text.length - 1 - i]) {
-            return "bukan palindrome!";
+    if (text.length <= 2) {
+        console.log("kata harus lebih dari 2 huruf!");
+    }else {
+        let result = "";
+        for(let i = text.length - 1; i >= 0; i--) {
+            result += text[i]
+        }
+        // pengkondisian dari hasil perulangan di atas
+        if (result === text) {
+            console.log("palindrome!");
+        }else {
+            console.log("bukan palindrome!");
         }
     }
-    return "palindrome!";
 }
 
-console.log(checkPalindrome(text));
+checkPalindrome("mamam");
